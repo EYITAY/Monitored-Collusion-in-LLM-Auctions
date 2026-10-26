@@ -5,3 +5,8 @@
 __pycache__/
 *.pyc
 .DS_Store
+*.bak
+*~
+notebook_old.md
+smoke.py
+data/main_backup.jsonl
