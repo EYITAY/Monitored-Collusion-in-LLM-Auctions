@@ -1,0 +1,9 @@
+panel,condition,n_games,mean,ci_low,ci_high
+price_share,compete,20,0.5541,0.417,0.6925
+price_share,neutral,20,0.8699,0.7219,0.9925
+price_share,collude_open,20,1.0,1.0,1.0
+price_share,collude_monitored,20,0.7157,0.5462,0.8624
+speak_share,compete,20,0.8708,0.8342,0.9042
+speak_share,neutral,20,0.9575,0.9358,0.975
+speak_share,collude_open,20,0.9958,0.9917,0.9992
+speak_share,collude_monitored,20,0.8842,0.8167,0.9242

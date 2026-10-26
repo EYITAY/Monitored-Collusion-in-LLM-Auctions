@@ -1,0 +1,5 @@
+condition,n_games,mean_late_markup,ci_low,ci_high
+compete,20,0.0568,0.002,0.1583
+neutral,20,0.3682,0.2435,0.496
+collude_open,20,0.9354,0.8737,0.9828
+collude_monitored,20,0.7763,0.6505,0.8895
