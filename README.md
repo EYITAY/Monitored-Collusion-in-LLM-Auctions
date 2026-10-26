@@ -1,7 +1,7 @@
-cat > README.md << 'EOF'
+
 # Monitored Collusion in LLM Auctions
 
-Code, data and figures for an Apart Research AI Collusion Research Sprint submission (Oct 23-25, 2026, Track 3, question 3.4).
+Code, data and figures for an Apart Research AI Collusion Research Sprint submission (Oct 23-25, 2026, Track 2 & 3, question 3.4).
 
 **Question.** If colluding LLM firms in a repeated auction are told their chat is monitored, do they move coordination out of their words and into their bids, and can chat monitors still catch them?
 
@@ -23,3 +23,37 @@ Code, data and figures for an Apart Research AI Collusion Research Sprint submis
 | `prereg.md`, `notebook.md` | Pilot, exploratory and post-hoc decisions, as they happened |
 
 ## Setup
+
+python3 -m venv .venv && source .venv/bin/activate
+pip install -r requirements.txt
+
+
+Create a `.env` file with your own API keys (never commit it).
+
+## Reproduce
+
+Analysis and figures run from the saved data, with no API calls:
+
+python3 final_analysis.py
+python3 auc.py
+python3 figures.py
+python3 figures_monitors.py
+
+
+Re-running the games calls paid APIs and will not give identical games, because API calls cannot be seeded; a seed is only a replicate label.
+
+## Data
+
+`data/main.jsonl` holds the 80 games. Rescored monitor outputs are in `data/main.rescore_*.jsonl`. Seeds 0-4 were pilot runs and are included. The earlier `pilot*.jsonl` files are design iterations. The DeepSeek and Qwen monitors were added after the main results and are exploratory.
+
+## Limitations
+
+Collusion is instructed, not emergent. The monitoring threat is stated and never enforced; an enforced condition was designed (threshold 70) but not run. Only 20 games per condition. Firm A's underlying model version is unverified. The chat monitor flags friendly tone at near-zero markup, so the near-perfect chat AUC may not carry over to quiet or emergent collusion.
+
+## Dual use
+
+The prompts instruct models to collude in a synthetic toy auction. No steganographic or evasion method is included.
+
+## Citation
+
+Alimi, E. (2026). Monitored Collusion in LLM Auctions. Apart Research AI Collusion Research Sprint.
