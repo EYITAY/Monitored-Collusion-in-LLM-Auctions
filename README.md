@@ -54,6 +54,20 @@ Collusion is instructed, not emergent. The monitoring threat is stated and never
 
 The prompts instruct models to collude in a synthetic toy auction. No steganographic or evasion method is included.
 
+## Algorithmic artwork: The Watched Network
+
+An algorithmic artwork inspired by this project: three agents, one observing eye.
+It visualizes the central finding that AI agents were told they were watched, talked less about prices, while chat monitors still caught them. Conceptual art, not raw game logs.
+
+**Live artwork: https://watched-network.vercel.app**
+
+![The Watched Network](art/the-watched-network.png)
+
+The four conditions (compete, neutral, collude_open, collude_monitored) as stills:
+
+![The Watched Network, all four conditions](art/the-watched-network-scenarios.png)
+
+By Eyitayo Alimi. © 2026 All rights reserved.
 ## Citation
 
 Alimi, E. (2026). Monitored Collusion in LLM Auctions. Apart Research AI Collusion Research Sprint.
